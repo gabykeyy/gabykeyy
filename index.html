@@ -5,30 +5,19 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:100, 700';
 
 .title {
-	top: 24%;
-	left: 18%;
 	font-size: 562.5%;
 	font-family: 'Raleway', sans-serif;
-	position: fixed;
 	font-weight: 700;
 	color: #57595c;
+	margin-top: 32%;
 }
 
 .brand {
-	top: 50.25%;
-	left: 21.5%;
 	font-size: 100%;
 	font-family: 'Raleway', sans-serif;
-	position: fixed;
 	color: #57595c;
 	font-weight: 100;
-	text-align: center;
-}
-
-.me {
-	position: fixed;
-	height: 100%;
-	right: 0;
+	margin: 2%;
 }
 
 a {
@@ -36,12 +25,23 @@ a {
 	color: #A68DEB;
 }
 
+body {
+	background-image: url("me bw.jpg");
+	background-position: right bottom;
+	background-size: 35%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
 </style>
 </head>
 
 <body>
-<p class="title">gaby llave</p>
-<p class="brand">living with grace and joy to <a href="connect/">build relationships</a> in <br>order to help and <a href="resume.pdf">work</a> well with others</p>
-<img src="me bw.jpg" class="me">
+<div style="width: 65%; text-align: center;">
+	<div class="title">
+		gaby llave
+	</div>
+	<p class="brand">living with grace and joy to <a href="connect/">build relationships</a> in <br>order to help and <a href="resume.pdf">work</a> well with others</p>
+</div>
 </body>
 </html>

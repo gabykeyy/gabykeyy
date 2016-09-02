@@ -5,112 +5,98 @@
 		@import 'https://fonts.googleapis.com/css?family=Raleway:100, 700';
 
 		.title {
-			top: 35.5%;
-			left: 18%;
 			font-size: 562.5%;
 			font-family: 'Raleway', sans-serif;
-			position: fixed;
 			font-weight: 700;
 			color: #57595c;
+			margin-top: 32%;
 		}
 
 		.description {
-			top: 49.25%;
-			left: 29%;
 			font-size: 124%;
 			font-family: 'Raleway', sans-serif;
-			position: fixed;
 			color: #57595c;
 			font-weight: 100;
-		}
-
-		.me {
-			position: fixed;
-			height: 100%;
-			right: 0;
+			margin: 2%;
 		}
 
 		.linkedin {
 			height: 40px;
 			width: 40px;
-			margin-top: 32%;
-			margin-left: 24%; 
-			position: fixed;
+			display: inline-block;
+			background-image: url(icons/iconmonstr-linkedin-1-240.png);
+			background-size: 40px;
 		}
 
 		.linkedin:hover {
-			opacity: 0;
+			background-image: url(icons/iconmonstr-linkedin-1-240-purple.png);
+			cursor: pointer;
 		}
 
 		.linkedin-purple {
 			height: 40px;
-			width: 40px;
-			margin-top: 32%;
-			margin-left: 24%; 
-			position: relative;
+			width: 40px; 
+			display: inline-block;
 		}
 
 		.twitter {
 			height: 40px;
 			width: 40px;
-			margin-top: 32.24%;
-			margin-left: 30%; 
-			position: fixed;
+			display: inline-block;
+			background-image: url(icons/iconmonstr-twitter-1-240.png);
+			background-size: 40px;
+			margin-left: 25px;
 		}
 
 		.twitter:hover {
-			opacity: 0;
+			background-image: url(icons/iconmonstr-twitter-1-240-purple.png);
+			cursor: pointer;
 		}
 
 		.twitter-purple {
 			height: 40px;
-			width: 40px;
-			margin-top: 32.24%;
-			margin-left: 30%; 
-			position: relative;
+			width: 40px; 
+			display: inline-block;
 		}
 
 		.insta {
 			height: 40px;
 			width: 40px;
-			margin-top: 32.24%;
-			margin-left: 36%; 
-			position: fixed;
+			display: inline-block;
+			background-image: url(icons/iconmonstr-instagram-11-240.png);
+			background-size: 40px;
+			margin-left: 25px;
 		}
 
 		.insta:hover {
-			opacity: 0;
+			background-image: url(icons/iconmonstr-instagram-11-240-purple.png);
+			cursor: pointer;
 		}
 
 		.insta-purple {
 			height: 40px;
 			width: 40px;
-			margin-top: 32.24%;
-			margin-left: 36%; 
-			position: relative;
+			display: inline-block;
 		}
 
 		.calendar {
 			height: 40px;
-			width: 40px;
-			margin-top: 32.15%;
-			margin-left: 42%; 
-			position: fixed;
-			display: block;
+			width: 40px; 
+			display: inline-block;
+			background-image: url(icons/iconmonstr-calendar-4-240.png);
+			background-size: 40px;
+			margin-left: 25px;
 		}
 
 		.calendar:hover {
-			opacity: 0;
-			/*display: block;*/
+			background-image: url(icons/iconmonstr-calendar-4-240-purple.png);
+			cursor: pointer;
 		}
 
 		.calendar-purple {
 			height: 40px;
 			width: 40px;
-			margin-top: 32.15%;
-			margin-left: 42%; 
-			position: relative;
-			display: block;
+			display: inline-block;
 		}
 
 		a {
@@ -123,25 +109,41 @@
 			text-decoration: none;
 		}
 
+		body {
+			background-image: url("me bw.jpg");
+			background-position: right bottom;
+			background-size: 35%;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+
 		</style>
 	</head>
 
 	<body>
-		<a href="http://gabyllave.com" class="title">gaby llave</a>
-		<p class="description">let's connect c:</p>
+		<div style="width: 65%; text-align: center;">
+			<div class="title">
+			<a href="http://gabyllave.com">gaby llave</a>
+			</div>
+			<p class="description">let's connect c:</p>
 
-		<img src="icons/iconmonstr-linkedin-1-240-purple.png" class="linkedin">
-		<a href="https://www.linkedin.com/in/gabyllave"><img src="icons/iconmonstr-linkedin-1-240.png" class="linkedin linkedin-purple="></a>
+			<a href="https://www.linkedin.com/in/gabyllave">
+			<div class="linkedin"></div>
+			</a>
 
-		<img src="icons/iconmonstr-twitter-1-240-purple.png" class="twitter">
-		<a href="https://twitter.com/gabykeyy"><img src="icons/iconmonstr-twitter-1-240.png" class="twitter twitter-purple="></a>
+			<a href="https://twitter.com/gabykeyy">
+			<div class="twitter"></div>
+			</a>
 
-		<img src="icons/iconmonstr-instagram-11-240-purple.png" class="insta">
-		<a href="https://instagram.com/gabykeyy"><img src="icons/iconmonstr-instagram-11-240.png" class="insta insta-purple="></a>
+	
+			<a href="https://instagram.com/gabykeyy">
+			<div class="insta"></div>
+			</a>
 
-		<img src="icons/iconmonstr-calendar-4-240-purple.png" class="calendar">
-		<a href="https://gabyllave.youcanbook.me/"><img src="icons/iconmonstr-calendar-4-240.png" class="calendar calendar-purple="></a>
-
-		<img src="me bw.jpg" class="me">
+			<a href="https://gabyllave.youcanbook.me/">
+			<div class="calendar calendar-purple="></div>
+			</a>
+		</div>
+		<!-- <img src="me bw.jpg" class="me"> -->
 	</body>
 </html>
